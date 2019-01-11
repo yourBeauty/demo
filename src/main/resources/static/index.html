@@ -1,0 +1,34 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="admin/layout/default">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>首页</title>
+</head>
+<body>
+<section layout:fragment="content">
+    <section class="content-header">
+        <h2>欢迎使用流程管理后台管理系统aa</h2>
+        <button id="button">DFDA</button>
+    </section>
+</section>
+<th:block layout:fragment="script">
+    <script th:inline="javascript">
+        $("#button").alert("aaaa");
+        /*<![CDATA[*/
+        $(function () {
+            alert("aaa");
+            swal(
+                '互联网？',
+                '还在吗？',
+                'question'
+            )
+
+        });
+
+        /*]]>*/
+    </script>
+</th:block>
+</body>
+</html>
